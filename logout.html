@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<title>Internet hotspot - Log out</title>
+<link rel="stylesheet" href="css/style.css">
+<script>
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+</script>
+</head>
+<header class="main-header">
+    <div class="main-header">
+        <a href="login.html"><img src="img\logo-light.svg" title="" alt=""></a>
+      
+      <p class="header-title" style="margin-bottom: 0px;"> DESCONECTADO</p>
+    </div>
+</header>
+<body>
+    <div id="tsparticles"></div>
+    <div class="ie-fixMinHeight">
+        <div class="main">
+            <div class="wrap">
+                <h1>¡Acabas de cerrar sesión!</h1> 
+                <table>  
+                    <tr><td>Usuario</td><td>$(username)</td></tr>
+                    <tr><td>IP</td><td>$(ip)</td></tr>
+                    <tr><td>MAC</td><td>$(mac)</td></tr>
+                    <tr><td>Tiempo de conexion</td><td>$(uptime)</td></tr>
+                    $(if session-time-left)
+                    <tr><td>Tiempo Restante</td><td>$(session-time-left)</td></tr>
+                    $(endif)
+                </table>
+
+
+                <form action="$(link-login)" name="login" onSubmit="return openLogin()">
+                <input class="on" type="submit" value="CONECTAR">
+                </form>
+                <input type="submit" value="INGRESAR OTRA FICHA" onclick="location.href='login.html';"/> 
+            </div>
+        </div>
+    </div>
+<script src='./plugin/tsparticles.min.js'></script>
+  <script  src="./plugin/particles.js"></script>
+    
+</body>
+<footer>©Wifi San juan del rio</footer>
+</html>
