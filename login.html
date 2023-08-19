@@ -103,16 +103,17 @@
     </div>
     <script src="plugin/sweetalert2.all.min.js"></script>
   $(if error)
-  <script>
+  <!--<script>
   Swal.fire({
     title: "Error",
-    //text:"$(error)",
+    //text:"",
     html:'Error: $(error)</font>',
     icon:"error"})
+  </script>-->
+  <script>
+    alert("$(error)");
   </script>
   $(endif)
-  <script src='./plugin/tsparticles.min.js'></script>
-  <script  src="./plugin/particles.js"></script>
 </body>
 <footer>©Wifi San juan del rio</footer>
 </html>
