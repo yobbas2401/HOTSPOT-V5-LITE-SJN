@@ -208,30 +208,14 @@ html {
 }
 
 body {
+    background-image: linear-gradient(to left bottom, #1f1f1f, #262532, #2a2b46, #2c325b, #293971, #2a4e8f, #2365ad, #007dcb, #00aae8, #00d0cd, #00ef83, #c8ff00);
     
-/* Ubicación de la imagen */
+/* 
  background-image: url(../img/FONDO.jpg);
-/* Para dejar la imagen de fondo centrada, vertical y
-
-horizontalmente */
-
 background-position: center center;
-
-/* Para que la imagen de fondo no se repita */
-
 background-repeat: no-repeat;
-
-/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-
 background-attachment: fixed;
-
-/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-
-background-size: cover;
-
-/* Se muestra un color de fondo mientras se está cargando la imagen
-
-de fondo o si hay problemas para cargarla */
+background-size: cover; */
 
 /*background-color: #66999;
     /*background: #9c9ba2;
@@ -255,6 +239,8 @@ label {
 label {
     position: relative;
     display: flex;
+    /* align-items: center; */
+    width: 70%;
 }
 
 p::first-letter {
@@ -350,9 +336,17 @@ h1 {
 }
 
 form {
+    /* margin-top: 20px; */
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 35px;
+    border-color: #0fffbc;
+    padding: 30px 0px 30px 0px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -414,7 +408,7 @@ input[type=text] {
     background-color: rgb(238 237 237);
     height: 44px;
     padding: 3px 20px 3px 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 6px;
     /* background-color: rgb(0 0 0 / 35%); */
     -webkit-transition: -webkit-box-shadow .3s ease-in-out;
@@ -506,7 +500,12 @@ table td:first-child {
 }
 
 .lite {
-    background: #fff
+    background: #fff;
+    background-image: url(../img/Fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .lite input[type=submit] {
     background: var(--bs-blue);
@@ -528,15 +527,23 @@ table td:first-child {
     -webkit-box-shadow: 0 0 5px 0 rgba(62, 77, 89, .2);
     box-shadow: 0 0 5px 0 rgba(62, 77, 89, .2)
 }
+.lite form {
+    border-color: #010303;
+}
 
 .dark {
     background: #343434;
+    background-image: url(../img/Fondo.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
     /* color: #fff; */
 }
 
 .dark input[type=submit] {
-    background: #dc3a41;
-    color: aliceblue;
+    background: #0fffbc;
+    color: #272b2e;
 }
 
 .dark input[type=submit]:focus,
@@ -702,16 +709,4 @@ footer {
     font-family: system-ui;
     color: azure;
 }
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-  }
-  /* ---- tsparticles container ---- */
-  #tsparticles {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
   
