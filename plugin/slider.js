@@ -4,13 +4,13 @@
     
     var set = $.extend( 
       {
-        slidePause: 2000,
-        fadeSpeed: 800,
+        slidePause: 3000,
+        fadeSpeed: 1000,
         autoPlay: "on",
         showArrows: "off", 
         hideDots: "off", 
         hoverZoom: "on",
-        titleBarTop: "off"
+        titleBarTop: "on"
       },
       settings
     ); 
