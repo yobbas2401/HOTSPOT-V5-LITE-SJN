@@ -37,7 +37,7 @@ $(endif)
     </div>
 </header>
 <div id="tsparticles"></div>
-<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+<body class="lite" advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap">
@@ -66,7 +66,7 @@ $(endif)
                     $(if login-by-mac != 'yes')
                     <!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
                     <button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
-                    <!-- end of user manager link -->
+                     end of user manager link -->
                     <input class="off" type="submit" value="DESCONECTAR">
                     $(endif)
                 </form>

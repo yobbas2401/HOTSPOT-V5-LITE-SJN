@@ -22,27 +22,25 @@
       <p class="header-title" style="margin-bottom: 0px;"> DESCONECTADO</p>
     </div>
 </header>
-<body>
+<body class="lite">
     <div id="tsparticles"></div>
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap">
                 <h1>¡Acabas de cerrar sesión!</h1> 
-                <table>  
-                    <tr><td>Usuario</td><td>$(username)</td></tr>
-                    <tr><td>IP</td><td>$(ip)</td></tr>
-                    <tr><td>MAC</td><td>$(mac)</td></tr>
-                    <tr><td>Tiempo de conexion</td><td>$(uptime)</td></tr>
-                    $(if session-time-left)
-                    <tr><td>Tiempo Restante</td><td>$(session-time-left)</td></tr>
-                    $(endif)
-                </table>
-
-
                 <form action="$(link-login)" name="login" onSubmit="return openLogin()">
+                <table>  
+                        <tr><td>Usuario</td><td>$(username)</td></tr>
+                        <tr><td>IP</td><td>$(ip)</td></tr>
+                        <tr><td>MAC</td><td>$(mac)</td></tr>
+                        <tr><td>Tiempo de conexion</td><td>$(uptime)</td></tr>
+                        $(if session-time-left)
+                        <tr><td>Tiempo Restante</td><td>$(session-time-left)</td></tr>
+                        $(endif)
+                </table>
                 <input class="on" type="submit" value="CONECTAR">
+                <input class="on" type="submit" value="INGRESAR OTRA FICHA" onclick="location.href='login.html';" style="margin-top: 20px;"/> 
                 </form>
-                <input type="submit" value="INGRESAR OTRA FICHA" onclick="location.href='login.html';"/> 
             </div>
         </div>
     </div>
