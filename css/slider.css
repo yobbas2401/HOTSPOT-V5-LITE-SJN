@@ -92,8 +92,8 @@
 
 .slider > ul > li {
     padding: 0;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     list-style: none;
     float: left;

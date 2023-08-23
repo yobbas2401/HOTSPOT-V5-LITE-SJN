@@ -4,8 +4,8 @@
     
     var set = $.extend( 
       {
-        slidePause: 3000,
-        fadeSpeed: 1000,
+        slidePause: 5000,
+        fadeSpeed: 2000,
         autoPlay: "on",
         showArrows: "off", 
         hideDots: "off", 
@@ -133,25 +133,12 @@ $(document).ready(function() {
   
   $("#slider1").sliderResponsive({
   // Using default everything
-    // slidePause: 5000,
-    // fadeSpeed: 800,
-    // autoPlay: "on",
-    // showArrows: "off", 
-    // hideDots: "off", 
-    // hoverZoom: "on", 
-    // titleBarTop: "off"
-  });
-  
-  $("#slider2").sliderResponsive({
-    fadeSpeed: 300,
-    autoPlay: "off",
-    showArrows: "on",
-    hideDots: "on"
-  });
-  
-  $("#slider3").sliderResponsive({
-    hoverZoom: "off",
-    hideDots: "on"
-  });
-  
+    //slidePause: 4000,
+    //fadeSpeed: 1000,
+    //autoPlay: "on",
+    //showArrows: "off", 
+    //hideDots: "off", 
+    //hoverZoom: "on", 
+    //titleBarTop: "on"
+  });  
 });
