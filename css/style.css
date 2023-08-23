@@ -341,11 +341,12 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid;
+    /* border: 2px solid; */
     border-radius: 35px;
     border-color: #0fffbc;
     padding: 30px 50px 30px 50px;
     background: #ffffff26;
+    backdrop-filter: blur(4.6px);
 }
 
 @-webkit-keyframes fadeIn {
@@ -515,8 +516,8 @@ table td:first-child {
 .lite input[type=password],
 .lite input[type=text] {
     border: 1px solid #c3c3c3;
-    -webkit-box-shadow: 0 0 5px 0 rgb(13 80 231);
-    box-shadow: 0 0 10px 0 rgb(13 116 255 / 84%);
+    -webkit-box-shadow: 0 0 5px 0 rgb(17 18 18 / 94%);
+    box-shadow: 0 0 10px 0 rgb(18 18 18 / 94%);
 }
 
 .lite .info,
@@ -527,11 +528,11 @@ table td:first-child {
 
 .lite input[type=password]:focus,
 .lite input[type=text]:focus {
-    -webkit-box-shadow: 0 0 5px 0 rgb(231, 13, 13);
-    box-shadow: 0 0 5px 0 rgba(10, 207, 69, 0.788);
+    -webkit-box-shadow: 0 0 10px 0 rgb(10, 153, 236, 0.938);
+    box-shadow: 0 0 10px 0 rgba(10, 89, 236, 0.938);
 }
 .lite form {
-    border-color: #010303;
+    /* border-color: #010303; */
 }
 
 .dark {
