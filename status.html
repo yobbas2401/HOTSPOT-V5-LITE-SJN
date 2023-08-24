@@ -37,7 +37,7 @@ $(endif)
     </div>
 </header>
 <div id="tsparticles"></div>
-<body class="lite" advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+<body class="lite" $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap">
@@ -73,8 +73,6 @@ $(endif)
             </div>
         </div>
     </div>
-<script src='./plugin/tsparticles.min.js'></script>
-  <script  src="./plugin/particles.js"></script>
 </body>
 <footer>©Wifi San juan del rio</footer>
 </html>

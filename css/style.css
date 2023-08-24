@@ -341,7 +341,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid; */
+    border: 2px solid;
     border-radius: 35px;
     border-color: #0fffbc;
     padding: 30px 50px 30px 50px;
@@ -473,7 +473,7 @@ input[type=submit] {
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     font-size: 25px;
-    font-family: 'FredokaOne';
+    font-family: system-ui;
     font-weight: 900;
     /* box-shadow: inset #fdf4f4 1px 0px 10px 0px; */
 }
@@ -532,7 +532,17 @@ table td:first-child {
     box-shadow: 0 0 10px 0 rgba(10, 89, 236, 0.938);
 }
 .lite form {
-    /* border-color: #010303; */
+    border-color: #ffffff87;
+}
+.lite .error {
+    border-color: #0a0a0a9f;
+    background-color: #d81616c0;
+    color: #000;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 70%;
+    /* text-align: center; */
+    display: inline-block;
 }
 
 .dark {
@@ -656,6 +666,7 @@ footer {
     color: aliceblue;
     text-align: center;
     font-family: system-ui;
+    font-weight: 500;
 }
 .card-body {
     padding: 10px;

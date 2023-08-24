@@ -53,6 +53,7 @@
                
                 <div class="info">
                     <h5>INGRESA TU FICHA O ESCANEA EL CODIGO QR PARA ACCEDER A INTERNET</h5>
+                    <div class="error">$(if error)$(error)$(endif)</div>
                 </div>
                 <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <img class="logo" src="img\logo-login.svg" title="" alt="">
