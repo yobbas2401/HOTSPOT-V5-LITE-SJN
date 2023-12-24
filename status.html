@@ -42,9 +42,9 @@ $(endif)
         <div class="main">
             <div class="wrap">
                 $(if login-by == 'trial')
-                    <h1>Bienvenido!</h1>
+                    <h1 style="text-shadow: 0px 0px 14px #ffffff;">Bienvenido!</h1>
                 $(elif login-by != 'mac')
-                    <h1>Bienvenido, $(username)!</h1>
+                    <h1 style="text-shadow: 0px 0px 14px #ffffff;">Bienvenido, $(username)!</h1>
                 $(endif)                
 
                 <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
@@ -74,5 +74,5 @@ $(endif)
         </div>
     </div>
 </body>
-<footer>©Wifi San juan del rio</footer>
+<footer><marquee>©Wifi San juan del rio y WIIMAX les desean feliz navidad y prospero año nuevo 2024!</marquee></footer>
 </html>

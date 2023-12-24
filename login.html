@@ -47,13 +47,17 @@
     </script>
     $(endif)
     <div class="container">
-        
         <div class="row">
             <div class="col-lg-5">
                
                 <div class="info">
-                    <h5>INGRESA TU FICHA O ESCANEA EL CODIGO QR PARA ACCEDER A INTERNET</h5>
-                    <div class="error">$(if error)$(error)$(endif)</div>
+                    <h5 style="text-shadow: 0px 0px 14px #ffffff; BACKGROUND-COLOR: #fbffff4d;" >INGRESA TU FICHA O ESCANEA EL CODIGO QR PARA ACCEDER A INTERNET</h5>
+                    $(if error)
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Error: </strong>$(error)
+                    </div>
+                    $(endif)
                 </div>
                 <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <img class="logo" src="img\logo-login.svg" title="" alt="">
@@ -90,12 +94,11 @@
             </div>
         </div>
     </div>
-    <script src="plugin/sweetalert2.all.min.js"></script>
-  $(if error)
+  <!--$(if error)
   <script>
     alert("$(error)");
   </script>
-  $(endif)
+  $(endif)-->  
 </body>
-<footer>©Wifi San juan del rio</footer>
+<footer><marquee>©Wifi San juan del rio y WIIMAX les desean feliz navidad y prospero año nuevo 2024!</marquee></footer>
 </html>
